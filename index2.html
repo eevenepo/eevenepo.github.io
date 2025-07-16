@@ -39,5 +39,32 @@
     <footer>
         <p>&copy; Luc Evenepoel</p>
     </footer>
+<!-- Welcome Message Element -->
+    <div id="welcome-message" class="hidden">
+        🎉 Welkom bij Luc Evenepoel Kinesitherapie! 🎉
+    </div>
+
+    <!-- Confetti and Welcome Message Script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const message = document.getElementById('welcome-message');
+            message.classList.remove('hidden');
+            setTimeout(() => {
+                message.classList.add('show');
+            }, 100);
+
+            setTimeout(() => {
+                message.classList.remove('show');
+            }, 4000);
+
+            confetti({
+                particleCount: 150,
+                spread: 60,
+                origin: { y: 0.4 }
+            });
+        });
+    </script>
+	
 </body>
 </html>
