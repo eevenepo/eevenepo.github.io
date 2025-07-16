@@ -1,27 +1,26 @@
-welcome-message {
+/* Festive Welcome Message Styling */
+#welcome-message {
     position: fixed;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #4CAF50;
     color: white;
     font-size: 1.2em;
-    padding: 15px 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 9999;
+
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 #welcome-message.show {
     opacity: 1;
+    transform: translateX(-50%) scale(1.05);
 }
-
-.hidden {
-    display: none;
-}
-
 
 body {
     font-family: 'Roboto', sans-serif;
