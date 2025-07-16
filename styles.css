@@ -1,3 +1,28 @@
+#welcome-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#welcome-message.show {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
