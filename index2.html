@@ -39,9 +39,10 @@
     <footer>
         <p>&copy; Luc Evenepoel</p>
     </footer>
-		<!-- Welcome Message Element -->
-	<div id="welcome-message">
-	    🎉 Proficiat Papa! - Van Mama en uw zoons 🎉
+	
+	<!-- Welcome Message Element -->
+	<div id="welcome-message" class="hidden">
+	    🎉 Proficiat Papa - van Mama en uw zoons 🎉
 	</div>
 	
 	<!-- Confetti and Welcome Message Script -->
@@ -50,15 +51,13 @@
 	    window.addEventListener('load', () => {
 	        const message = document.getElementById('welcome-message');
 	
-	        // Show message
+	        message.classList.remove('hidden');
 	        message.classList.add('show');
 	
-	        // Hide after 4 seconds
 	        setTimeout(() => {
 	            message.classList.remove('show');
 	        }, 4000);
 	
-	        // Fire confetti burst multiple times for effect
 	        const duration = 2 * 1000;
 	        const animationEnd = Date.now() + duration;
 	        const interval = setInterval(() => {
@@ -67,13 +66,12 @@
 	                spread: 70,
 	                origin: { y: 0.4 }
 	            });
-	
 	            if (Date.now() > animationEnd) {
 	                clearInterval(interval);
 	            }
 	        }, 250);
 	    });
 	</script>
-		
+
 </body>
 </html>
