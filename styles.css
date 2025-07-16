@@ -1,4 +1,5 @@
-##welcome-message {
+/* Centered Popup Message */
+#welcome-message {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -12,12 +13,18 @@
     z-index: 9999;
 
     opacity: 0;
-    pointer-events: none;
     transition: opacity 1s ease-in-out;
+    pointer-events: none;
 }
 
+/* Fade In */
 #welcome-message.show {
     opacity: 1;
+}
+
+/* Ensure 'hidden' class only hides with opacity */
+.hidden {
+    opacity: 0;
 }
 
 body {
