@@ -1,89 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luc Evenepoel Kinesitherapie</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luc Evenepoel Kinesitherapie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
-	<div id="welcome-message" class="hidden">
+  <div id="welcome-message" class="hidden">
     🎉 Gelukkige verjaardag papa - Mama en uw zoons! 🎉
-</div>
-    <header>
-        <div class="header-content">
-        	<img src="img/Logo_wit.png" alt="Logo" class="logo">
-        	<h1>Luc Evenepoel | Kinesitherapie</h1>
-    	</div>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="treatments.html">Behandelingen</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-	  <div class="container">
-		<div class="main-content">
-			<h1>Uw kinesist in Aalst</h1>
-			<p>Al meer dan 25 jaar kan u bij Luc Evenepoel in Aalst terecht voor kinesitherapie. Door zijn jarenlange ervaring als leerkracht lichamelijke opvoeding, kan hij  een ideale combinatie maken tussen kinesitherapie en beweging. </p>
-			<div class="intro-section">
-				<img src="img/Picture1.png" alt="Profielfoto" class="profile-picture">
-	
-				<div class="intro-text">
-					<h3>Opleiding</h3>
-					<ul>
-						<li> Master Motorische Revalidatie en Kinesitherapie</li>
-						<li> Master Lichamelijke Opvoeding</li>
-					
-					</ul>
-					<h3>Filosofie</h3>
-					<blockquote><i>"Ik geloof in een individuele aanpak, waarbij kinesist en patiënt samen een plan uitwerken. Patiënten krijgen een aangepast oefenprogramma dat ze thuis op zelfstandige basis kunnen herhalen."</i></blockquote>
-					<h3>Praktisch</h3>
-	<ul>
-		<li> Geconventioneerd kinesitherapeut</li>
-		<li> Huisbezoek mogelijk</li>
-	
-	</ul>
-				</div>
-			
-	</div>
-	
-    <footer>
-        <p>&copy; Luc Evenepoel</p>
-    </footer>
-	
-	<!-- Welcome Message Element -->
-	<div id="welcome-message" class="hidden">
-	    🎉 Proficiat Papa - van Mama en uw zoons 🎉
-	</div>
-	
-	<!-- Confetti and Welcome Message Script -->
-	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-	<script>
-	    window.addEventListener('load', () => {
-	        const message = document.getElementById('welcome-message');
-	
-	        message.classList.remove('hidden');
-	        message.classList.add('show');
-	
-	        setTimeout(() => {
-	            message.classList.remove('show');
-	        }, 4000);
-	
-	        const duration = 2 * 1000;
-	        const animationEnd = Date.now() + duration;
-	        const interval = setInterval(() => {
-	            confetti({
-	                particleCount: 50,
-	                spread: 70,
-	                origin: { y: 0.4 }
-	            });
-	            if (Date.now() > animationEnd) {
-	                clearInterval(interval);
-	            }
-	        }, 250);
-	    });
-	</script>
+  </div>
 
+  <div class="page-wrapper">
+    <header>
+      <div class="header-content">
+        <img src="img/Logo_wit.png" alt="Logo" class="logo">
+        <h1>Luc Evenepoel | Kinesitherapie</h1>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="treatments.html">Behandelingen</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+      <div class="main-content">
+        <h1>Uw kinesist in Aalst</h1>
+        <p>Al meer dan 25 jaar kan u bij Luc Evenepoel in Aalst terecht voor kinesitherapie. Door zijn jarenlange ervaring als leerkracht lichamelijke opvoeding, kan hij een ideale combinatie maken tussen kinesitherapie en beweging.</p>
+        
+        <div class="intro-section">
+          <img src="img/Picture1.png" alt="Profielfoto" class="profile-picture">
+          
+          <div class="intro-text">
+            <h3>Opleiding</h3>
+            <ul>
+              <li>Master Motorische Revalidatie en Kinesitherapie</li>
+              <li>Master Lichamelijke Opvoeding</li>
+            </ul>
+
+            <h3>Filosofie</h3>
+            <blockquote><i>"Ik geloof in een individuele aanpak, waarbij kinesist en patiënt samen een plan uitwerken. Patiënten krijgen een aangepast oefenprogramma dat ze thuis op zelfstandige basis kunnen herhalen."</i></blockquote>
+            
+            <h3>Praktisch</h3>
+            <ul>
+              <li>Geconventioneerd kinesitherapeut</li>
+              <li>Huisbezoek mogelijk</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Luc Evenepoel</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      const message = document.getElementById('welcome-message');
+      message.classList.remove('hidden');
+      message.classList.add('show');
+
+      setTimeout(() => {
+        message.classList.remove('show');
+      }, 4000);
+
+      const duration = 2000;
+      const animationEnd = Date.now() + duration;
+      const interval = setInterval(() => {
+        confetti({
+          particleCount: 50,
+          spread: 70,
+          origin: { y: 0.4 }
+        });
+        if (Date.now() > animationEnd) {
+          clearInterval(interval);
+        }
+      }, 250);
+    });
+  </script>
 </body>
 </html>
