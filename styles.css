@@ -1,4 +1,4 @@
-#welcome-message {
+##welcome-message {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -13,12 +13,11 @@
 
     opacity: 0;
     pointer-events: none;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 #welcome-message.show {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1);
 }
 
 body {
