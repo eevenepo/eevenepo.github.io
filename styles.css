@@ -1,15 +1,14 @@
-/* Festive Welcome Message Styling */
 #welcome-message {
     position: fixed;
-    top: 30px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background-color: #4CAF50;
     color: white;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.4em;
+    padding: 20px 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     z-index: 9999;
 
     opacity: 0;
@@ -19,7 +18,7 @@
 
 #welcome-message.show {
     opacity: 1;
-    transform: translateX(-50%) scale(1.05);
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 body {
