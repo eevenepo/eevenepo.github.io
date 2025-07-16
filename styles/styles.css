@@ -90,15 +90,21 @@ header {
 
 
 nav {
+    background-color: #fff; /* keep or change as you want */
     text-align: center;
-    margin: 20px 0;
+    padding: 25px 0; /* bigger vertical padding */
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
     color: #333;
     font-weight: 700;
+    font-size: 1.25rem; /* increase font size */
+    padding: 12px 15px; /* more clickable area */
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
