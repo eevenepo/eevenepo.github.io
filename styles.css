@@ -97,6 +97,14 @@ nav a:hover {
 }
 }
 
+.profile-picture {
+    max-width: 200px;  /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center horizontally */
+    border-radius: 8px; /* Optional: round corners */
+}
+
 .treatment-box {
     background: #fff;
     border: 1px solid #ccc;
