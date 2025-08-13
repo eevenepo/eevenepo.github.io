@@ -8,10 +8,6 @@
   <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
-  <div id="welcome-message" class="hidden">
-    🎉 Gelukkige verjaardag papa - Mama en uw zoons! 🎉
-  </div>
-
   <div class="page-wrapper">
     <header>
       <div class="header-content">
@@ -58,31 +54,6 @@
   <footer>
     <p>&copy; Luc Evenepoel</p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script>
-    window.addEventListener('load', () => {
-      const message = document.getElementById('welcome-message');
-      message.classList.remove('hidden');
-      message.classList.add('show');
-
-      setTimeout(() => {
-        message.classList.remove('show');
-      }, 4000);
-
-      const duration = 2000;
-      const animationEnd = Date.now() + duration;
-      const interval = setInterval(() => {
-        confetti({
-          particleCount: 50,
-          spread: 70,
-          origin: { y: 0.4 }
-        });
-        if (Date.now() > animationEnd) {
-          clearInterval(interval);
-        }
-      }, 250);
-    });
-  </script>
 </body>
 </html>
+
